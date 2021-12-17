@@ -1,11 +1,10 @@
-package com.talk2amareswaran.projects.springboot2authserver.repository;
+package com.gathertales.authservice.repository;
 
-import javax.transaction.Transactional;
-
+import com.gathertales.authservice.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
-import com.talk2amareswaran.projects.springboot2authserver.entity.User;
+import javax.transaction.Transactional;
 
 @Repository
 @Transactional
