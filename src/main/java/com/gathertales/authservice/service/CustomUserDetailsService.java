@@ -8,8 +8,10 @@ import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.CrossOrigin;
 
 @Service(value = "userDetailsService")
+@CrossOrigin(origins = "http://localhost:4020", maxAge = 3600)
 public class CustomUserDetailsService implements UserDetailsService {
 
 	@Autowired
